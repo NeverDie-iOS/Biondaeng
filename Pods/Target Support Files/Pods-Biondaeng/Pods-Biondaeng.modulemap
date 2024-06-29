@@ -1,0 +1,6 @@
+framework module Pods_Biondaeng {
+  umbrella header "Pods-Biondaeng-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A7E3CDD8E8F52D0C74ADFCB /* Pods_Biondaeng.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704449A191F66F05797964CC /* Pods_Biondaeng.framework */; };
 		54BAF7FA2C305D54007584B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BAF7F92C305D54007584B7 /* AppDelegate.swift */; };
 		54BAF7FC2C305D54007584B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BAF7FB2C305D54007584B7 /* SceneDelegate.swift */; };
 		54BAF7FE2C305D54007584B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BAF7FD2C305D54007584B7 /* ViewController.swift */; };
@@ -26,6 +27,9 @@
 		54BAF8052C305D55007584B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54BAF8072C305D55007584B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54BAF80D2C305D64007584B7 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		704449A191F66F05797964CC /* Pods_Biondaeng.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Biondaeng.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB6AEC6C2F5D6B6245D014AE /* Pods-Biondaeng.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Biondaeng.release.xcconfig"; path = "Target Support Files/Pods-Biondaeng/Pods-Biondaeng.release.xcconfig"; sourceTree = "<group>"; };
+		FF1A760C208DB9BE80150829 /* Pods-Biondaeng.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Biondaeng.debug.xcconfig"; path = "Target Support Files/Pods-Biondaeng/Pods-Biondaeng.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,12 +37,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A7E3CDD8E8F52D0C74ADFCB /* Pods_Biondaeng.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FE3517703993656D13A1121 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A760C208DB9BE80150829 /* Pods-Biondaeng.debug.xcconfig */,
+				FB6AEC6C2F5D6B6245D014AE /* Pods-Biondaeng.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		543B0C652C305E1000558FE4 /* font */ = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +66,8 @@
 			children = (
 				54BAF7F82C305D54007584B7 /* Biondaeng */,
 				54BAF7F72C305D54007584B7 /* Products */,
+				1FE3517703993656D13A1121 /* Pods */,
+				DC4123C1B25802E295E4E238 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +95,14 @@
 			path = Biondaeng;
 			sourceTree = "<group>";
 		};
+		DC4123C1B25802E295E4E238 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				704449A191F66F05797964CC /* Pods_Biondaeng.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54BAF80A2C305D55007584B7 /* Build configuration list for PBXNativeTarget "Biondaeng" */;
 			buildPhases = (
+				0F9CF837165E4B05AD570BD3 /* [CP] Check Pods Manifest.lock */,
 				54BAF7F22C305D54007584B7 /* Sources */,
 				54BAF7F32C305D54007584B7 /* Frameworks */,
 				54BAF7F42C305D54007584B7 /* Resources */,
+				E13F09AAA0922CECF51547B7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F9CF837165E4B05AD570BD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Biondaeng-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E13F09AAA0922CECF51547B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Biondaeng/Pods-Biondaeng-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Biondaeng/Pods-Biondaeng-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Biondaeng/Pods-Biondaeng-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		54BAF7F22C305D54007584B7 /* Sources */ = {
@@ -299,6 +368,7 @@
 		};
 		54BAF80B2C305D55007584B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF1A760C208DB9BE80150829 /* Pods-Biondaeng.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,6 +396,7 @@
 		};
 		54BAF80C2C305D55007584B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB6AEC6C2F5D6B6245D014AE /* Pods-Biondaeng.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
