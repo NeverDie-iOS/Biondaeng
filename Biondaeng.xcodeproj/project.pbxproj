@@ -50,21 +50,22 @@
 				FF1A760C208DB9BE80150829 /* Pods-Biondaeng.debug.xcconfig */,
 				FB6AEC6C2F5D6B6245D014AE /* Pods-Biondaeng.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		543B0C652C305E1000558FE4 /* font */ = {
+		5468320F2C3282C50043303D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				54BAF80D2C305D64007584B7 /* Pretendard-SemiBold.otf */,
 			);
-			path = font;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		54BAF7ED2C305D54007584B7 = {
 			isa = PBXGroup;
 			children = (
 				54BAF7F82C305D54007584B7 /* Biondaeng */,
+				5468320F2C3282C50043303D /* Fonts */,
 				54BAF7F72C305D54007584B7 /* Products */,
 				1FE3517703993656D13A1121 /* Pods */,
 				DC4123C1B25802E295E4E238 /* Frameworks */,
@@ -82,7 +83,6 @@
 		54BAF7F82C305D54007584B7 /* Biondaeng */ = {
 			isa = PBXGroup;
 			children = (
-				543B0C652C305E1000558FE4 /* font */,
 				54BAF7F92C305D54007584B7 /* AppDelegate.swift */,
 				54BAF7FB2C305D54007584B7 /* SceneDelegate.swift */,
 				54BAF7FD2C305D54007584B7 /* ViewController.swift */,
@@ -90,7 +90,6 @@
 				54BAF8022C305D55007584B7 /* Assets.xcassets */,
 				54BAF8042C305D55007584B7 /* LaunchScreen.storyboard */,
 				54BAF8072C305D55007584B7 /* Info.plist */,
-				54BAF80D2C305D64007584B7 /* Pretendard-SemiBold.otf */,
 			);
 			path = Biondaeng;
 			sourceTree = "<group>";
