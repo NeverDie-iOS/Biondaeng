@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A7E3CDD8E8F52D0C74ADFCB /* Pods_Biondaeng.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704449A191F66F05797964CC /* Pods_Biondaeng.framework */; };
+		540C9D032C3367FE0069B0E5 /* SetAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540C9D022C3367FE0069B0E5 /* SetAlarmViewController.swift */; };
 		540F935A2C33272A00B03FC8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F93592C33272A00B03FC8 /* WelcomeViewController.swift */; };
 		54BAF7FA2C305D54007584B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BAF7F92C305D54007584B7 /* AppDelegate.swift */; };
 		54BAF7FC2C305D54007584B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BAF7FB2C305D54007584B7 /* SceneDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		540C9D022C3367FE0069B0E5 /* SetAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetAlarmViewController.swift; sourceTree = "<group>"; };
 		540F93592C33272A00B03FC8 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		54BAF7F62C305D54007584B7 /* Biondaeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Biondaeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54BAF7F92C305D54007584B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				540F93592C33272A00B03FC8 /* WelcomeViewController.swift */,
+				540C9D022C3367FE0069B0E5 /* SetAlarmViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				540F935A2C33272A00B03FC8 /* WelcomeViewController.swift in Sources */,
 				54BAF7FA2C305D54007584B7 /* AppDelegate.swift in Sources */,
 				54BAF7FC2C305D54007584B7 /* SceneDelegate.swift in Sources */,
+				540C9D032C3367FE0069B0E5 /* SetAlarmViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,7 +392,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -417,7 +421,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
