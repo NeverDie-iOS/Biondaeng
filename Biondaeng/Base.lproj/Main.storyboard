@@ -124,19 +124,109 @@
                     <view key="view" contentMode="scaleToFill" id="zN3-iw-qzQ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bx-N1-YCt">
+                                <rect key="frame" x="16" y="133.66666666666666" width="361" height="215.99999999999997"/>
+                            </pickerView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alarm.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Qt3-HU-pEI">
+                                <rect key="frame" x="183" y="12" width="27" height="26"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="VFo-P3-HmS"/>
+                                    <constraint firstAttribute="width" constant="27" id="jDi-zv-6zc"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알람 설정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSb-RU-Xkf">
+                                <rect key="frame" x="159.33333333333334" y="49" width="74.333333333333343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시간에 맞춰 알려드릴게요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzW-RP-Vw5">
+                                <rect key="frame" x="129" y="103" width="135" height="15.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cJQ-yy-af9">
+                                <rect key="frame" x="16" y="349.66666666666669" width="361" height="51"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kM7-wg-HFy">
+                                        <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="51"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="취소"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Do-3g-ZlL">
+                                        <rect key="frame" x="184.66666666666663" y="0.0" width="176.33333333333337" height="51"/>
+                                        <color key="backgroundColor" systemColor="tintColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="tintColor" red="0.58039215686274503" green="0.76862745098039209" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="선택 완료">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="mDt-M6-dBW"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="atr-hf-qQX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cJQ-yy-af9" firstAttribute="centerX" secondItem="atr-hf-qQX" secondAttribute="centerX" id="Fxe-6a-x2Y"/>
+                            <constraint firstItem="4bx-N1-YCt" firstAttribute="leading" secondItem="atr-hf-qQX" secondAttribute="leading" constant="16" id="KMu-fu-5yc"/>
+                            <constraint firstItem="bzW-RP-Vw5" firstAttribute="top" secondItem="zSb-RU-Xkf" secondAttribute="bottom" constant="30" id="LPV-HI-RIZ"/>
+                            <constraint firstItem="cJQ-yy-af9" firstAttribute="top" secondItem="4bx-N1-YCt" secondAttribute="bottom" id="Nfe-0q-8b3"/>
+                            <constraint firstItem="zSb-RU-Xkf" firstAttribute="top" secondItem="Qt3-HU-pEI" secondAttribute="bottom" constant="10" id="RHk-ER-lff"/>
+                            <constraint firstItem="Qt3-HU-pEI" firstAttribute="centerX" secondItem="atr-hf-qQX" secondAttribute="centerX" id="Zhv-Se-dFG"/>
+                            <constraint firstItem="4bx-N1-YCt" firstAttribute="top" secondItem="bzW-RP-Vw5" secondAttribute="bottom" constant="15" id="caD-H8-5Ho"/>
+                            <constraint firstItem="atr-hf-qQX" firstAttribute="trailing" secondItem="4bx-N1-YCt" secondAttribute="trailing" constant="16" id="eiJ-Zb-rjw"/>
+                            <constraint firstItem="Qt3-HU-pEI" firstAttribute="top" secondItem="zN3-iw-qzQ" secondAttribute="top" constant="12" id="fqS-YR-66X"/>
+                            <constraint firstItem="cJQ-yy-af9" firstAttribute="leading" secondItem="atr-hf-qQX" secondAttribute="leading" constant="16" id="fua-Vt-ml5"/>
+                            <constraint firstItem="atr-hf-qQX" firstAttribute="trailing" secondItem="cJQ-yy-af9" secondAttribute="trailing" constant="16" id="lK5-Xh-W5t"/>
+                            <constraint firstItem="bzW-RP-Vw5" firstAttribute="centerX" secondItem="atr-hf-qQX" secondAttribute="centerX" id="ly8-Rg-mrN"/>
+                            <constraint firstItem="zSb-RU-Xkf" firstAttribute="centerX" secondItem="atr-hf-qQX" secondAttribute="centerX" id="wSg-MY-Ln7"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alarmPickerView" destination="4bx-N1-YCt" id="yRY-KK-xwd"/>
+                        <outlet property="cancleButton" destination="kM7-wg-HFy" id="uD5-PU-YpJ"/>
+                        <outlet property="completeButton" destination="9Do-3g-ZlL" id="Ucu-fo-2hd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7N8-ES-KX9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1090.8396946564885" y="-11.267605633802818"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Ooy-xy-Giw">
+            <objects>
+                <viewController id="ctf-jL-JCl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xj7-RA-9YD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zld-Si-YGP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0jo-1t-H6q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2114" y="-11"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Image" width="166.66667175292969" height="178"/>
+        <image name="alarm.fill" catalog="system" width="123" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
