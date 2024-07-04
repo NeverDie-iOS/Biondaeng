@@ -10,6 +10,7 @@
 		4A7E3CDD8E8F52D0C74ADFCB /* Pods_Biondaeng.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704449A191F66F05797964CC /* Pods_Biondaeng.framework */; };
 		540C9D032C3367FE0069B0E5 /* SetAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540C9D022C3367FE0069B0E5 /* SetAlarmViewController.swift */; };
 		540F935A2C33272A00B03FC8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F93592C33272A00B03FC8 /* WelcomeViewController.swift */; };
+		545B4DFF2C36F79100EC6275 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 545B4DFE2C36F79100EC6275 /* .gitignore */; };
 		54BAF7FA2C305D54007584B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BAF7F92C305D54007584B7 /* AppDelegate.swift */; };
 		54BAF7FC2C305D54007584B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BAF7FB2C305D54007584B7 /* SceneDelegate.swift */; };
 		54BAF8012C305D54007584B7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 54BAF8002C305D54007584B7 /* Base */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		540C9D022C3367FE0069B0E5 /* SetAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetAlarmViewController.swift; sourceTree = "<group>"; };
 		540F93592C33272A00B03FC8 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		545B4DFE2C36F79100EC6275 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		54BAF7F62C305D54007584B7 /* Biondaeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Biondaeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54BAF7F92C305D54007584B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54BAF7FB2C305D54007584B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 		54BAF7ED2C305D54007584B7 = {
 			isa = PBXGroup;
 			children = (
+				545B4DFE2C36F79100EC6275 /* .gitignore */,
 				54BAF7F82C305D54007584B7 /* Biondaeng */,
 				54BAF7F72C305D54007584B7 /* Products */,
 				1FE3517703993656D13A1121 /* Pods */,
@@ -173,6 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				545B4DFF2C36F79100EC6275 /* .gitignore in Resources */,
 				54BAF8032C305D55007584B7 /* Assets.xcassets in Resources */,
 				54BAF8062C305D55007584B7 /* Base in Resources */,
 				54BAF8012C305D54007584B7 /* Base in Resources */,
