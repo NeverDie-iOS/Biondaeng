@@ -77,4 +77,19 @@ class SetAlarmViewController: UIViewController, UIPickerViewDataSource, UIPicker
         print("Selected time: \(selectedAmPm) \(selectedHour):\(selectedMinute)")
     }
     
+    @IBAction func tapCancleButton(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
+    
+    @IBAction func tapCompleteButton(_ sender: UIButton) {
+        guard let mainVC = storyboard?.instantiateViewController(withIdentifier: "MainViewController") as? MainViewController else { return }
+        
+        let navigationController = UINavigationController(rootViewController: mainVC)
+        
+        navigationController.modalPresentationStyle = .fullScreen
+        navigationController.isNavigationBarHidden = true
+
+        present(navigationController, animated: true)
+    }
+
 }

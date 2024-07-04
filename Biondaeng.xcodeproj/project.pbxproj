@@ -16,6 +16,8 @@
 		54BAF8012C305D54007584B7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 54BAF8002C305D54007584B7 /* Base */; };
 		54BAF8032C305D55007584B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BAF8022C305D55007584B7 /* Assets.xcassets */; };
 		54BAF8062C305D55007584B7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 54BAF8052C305D55007584B7 /* Base */; };
+		54C328EE2C36FF7C00F0729E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C328ED2C36FF7C00F0729E /* MainViewController.swift */; };
+		54C328F02C37007800F0729E /* Agenda.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54C328EF2C37007800F0729E /* Agenda.txt */; };
 		54F95ACF2C330BB80016E655 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 54F95ACE2C330BB80016E655 /* Pretendard-SemiBold.otf */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,8 @@
 		54BAF8022C305D55007584B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54BAF8052C305D55007584B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54BAF8072C305D55007584B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54C328ED2C36FF7C00F0729E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		54C328EF2C37007800F0729E /* Agenda.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Agenda.txt; sourceTree = "<group>"; };
 		54F95ACE2C330BB80016E655 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		704449A191F66F05797964CC /* Pods_Biondaeng.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Biondaeng.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6AEC6C2F5D6B6245D014AE /* Pods-Biondaeng.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Biondaeng.release.xcconfig"; path = "Target Support Files/Pods-Biondaeng/Pods-Biondaeng.release.xcconfig"; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 			children = (
 				540F93592C33272A00B03FC8 /* WelcomeViewController.swift */,
 				540C9D022C3367FE0069B0E5 /* SetAlarmViewController.swift */,
+				54C328ED2C36FF7C00F0729E /* MainViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -69,6 +74,7 @@
 		54BAF7ED2C305D54007584B7 = {
 			isa = PBXGroup;
 			children = (
+				54C328EF2C37007800F0729E /* Agenda.txt */,
 				545B4DFE2C36F79100EC6275 /* .gitignore */,
 				54BAF7F82C305D54007584B7 /* Biondaeng */,
 				54BAF7F72C305D54007584B7 /* Products */,
@@ -180,6 +186,7 @@
 				54BAF8032C305D55007584B7 /* Assets.xcassets in Resources */,
 				54BAF8062C305D55007584B7 /* Base in Resources */,
 				54BAF8012C305D54007584B7 /* Base in Resources */,
+				54C328F02C37007800F0729E /* Agenda.txt in Resources */,
 				54F95ACF2C330BB80016E655 /* Pretendard-SemiBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +244,7 @@
 				54BAF7FA2C305D54007584B7 /* AppDelegate.swift in Sources */,
 				54BAF7FC2C305D54007584B7 /* SceneDelegate.swift in Sources */,
 				540C9D032C3367FE0069B0E5 /* SetAlarmViewController.swift in Sources */,
+				54C328EE2C36FF7C00F0729E /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

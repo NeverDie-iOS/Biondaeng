@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mX8-eU-Bum">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -14,22 +14,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="6M4-mB-8Nm">
-            <objects>
-                <navigationController id="mX8-eU-Bum" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MEy-JV-vfK">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="20x-ti-6Ui"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LAu-UG-hzX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-813" y="-27"/>
-        </scene>
         <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -39,13 +23,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="WCo-f2-iYI">
-                                <rect key="frame" x="70" y="203" width="253" height="267"/>
+                                <rect key="frame" x="70" y="159" width="253" height="267"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="267" id="W1i-E3-vmz"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="CUK-BQ-ibW">
-                                <rect key="frame" x="0.0" y="518" width="393" height="111.66666666666663"/>
+                                <rect key="frame" x="0.0" y="474.00000000000006" width="393" height="111.66666666666669"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비온댕에 오신 걸 환영해요!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5f-zY-FLF">
                                         <rect key="frame" x="86" y="0.0" width="221" height="25.333333333333332"/>
@@ -73,7 +57,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YdG-si-GdM">
-                                <rect key="frame" x="30" y="689.66666666666663" width="333" height="50"/>
+                                <rect key="frame" x="30" y="645.66666666666663" width="333" height="50"/>
                                 <color key="backgroundColor" red="0.58039215686274503" green="0.76862745098039209" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="1hE-Nt-KMD"/>
@@ -115,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="195" y="-27"/>
         </scene>
         <!--Set Alarm View Controller-->
         <scene sceneID="330-3m-Rxu">
@@ -158,6 +142,9 @@
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="취소"/>
+                                        <connections>
+                                            <action selector="tapCancleButton:" destination="2mz-xR-9f7" eventType="touchUpInside" id="0Qo-E1-39G"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Do-3g-ZlL">
                                         <rect key="frame" x="184.66666666666663" y="0.0" width="176.33333333333337" height="51"/>
@@ -168,6 +155,9 @@
                                         <state key="normal" title="선택 완료">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapCompleteButton:" destination="2mz-xR-9f7" eventType="touchUpInside" id="a2x-Jm-68I"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -193,6 +183,7 @@
                             <constraint firstItem="zSb-RU-Xkf" firstAttribute="centerX" secondItem="atr-hf-qQX" secondAttribute="centerX" id="wSg-MY-Ln7"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Mg0-wf-Qr3"/>
                     <connections>
                         <outlet property="alarmPickerView" destination="4bx-N1-YCt" id="yRY-KK-xwd"/>
                         <outlet property="cancleButton" destination="kM7-wg-HFy" id="uD5-PU-YpJ"/>
@@ -201,12 +192,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7N8-ES-KX9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1090.8396946564885" y="-11.267605633802818"/>
+            <point key="canvasLocation" x="2086.2595419847326" y="-27.464788732394368"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="Ooy-xy-Giw">
             <objects>
-                <viewController id="ctf-jL-JCl" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="ctf-jL-JCl" customClass="MainViewController" customModule="Biondaeng" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xj7-RA-9YD">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -216,7 +207,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0jo-1t-H6q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2114" y="-11"/>
+            <point key="canvasLocation" x="3141.2213740458014" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bEf-V1-wxy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BpT-bk-Snj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3yp-8V-4U6">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2mz-xR-9f7" kind="relationship" relationship="rootViewController" id="7Sg-by-ZLa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GvH-UF-Y8H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1159.5419847328244" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
